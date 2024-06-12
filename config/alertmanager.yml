@@ -1,0 +1,20 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname']
+  group_wait: 30s
+  group_interval: 1m
+  repeat_interval: 2m
+  receiver: 'email-notifications'
+
+receivers:
+  - name: 'email-notifications'
+    email_configs:
+      - to: 'rajutiwari.181627@gmail.com'
+        from: 'regal2t@gmail.com'
+        smarthost: 'smtp.gmail.com:587'
+        auth_username: 'real2t@gmail.com'
+        auth_password: 'Rohit@0978'
+
+
