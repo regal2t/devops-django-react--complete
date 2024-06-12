@@ -15,6 +15,6 @@ receivers:
         from: 'regal2t@gmail.com'
         smarthost: 'smtp.gmail.com:587'
         auth_username: 'real2t@gmail.com'
-        auth_password: 'Rohit@0978'
+        auth_password: ''
 
 
